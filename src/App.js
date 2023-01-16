@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
+import Form from './Components/Form'
+import StudentSection from './Components/StudentSection'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const [StudentName, setStudentName] = useState('')
+    const [data, setData] = useState([])
+    const [isEditable, setIsEditable] = useState(false)
+    const [Editable, setEditable] = useState(null)
+
+    return (
+        <>
+        <h1 className='Title'>Student Attendance System</h1>
+            <Form
+                StudentName={StudentName}
+                setStudentName={setStudentName}
+                data={data}
+                setData={setData}
+                isEditable={isEditable}
+                setIsEditable={setIsEditable}
+                Editable={Editable}
+                setEditable={setEditable}
+            />
+            <StudentSection
+                StudentName={StudentName}
+                setStudentName={setStudentName}
+                data={data}
+                setData={setData}
+                isEditable={isEditable}
+                setIsEditable={setIsEditable}
+                Editable={Editable}
+                setEditable={setEditable}
+            />
+          
+        </>
+    )
 }
 
-export default App;
+export default App
