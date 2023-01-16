@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/studentattandance/static/css/main.499dec52.css",
+    "main.js": "/studentattandance/static/js/main.1ac0617f.js",
+    "index.html": "/studentattandance/index.html",
+    "main.499dec52.css.map": "/studentattandance/static/css/main.499dec52.css.map",
+    "main.1ac0617f.js.map": "/studentattandance/static/js/main.1ac0617f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.499dec52.css",
+    "static/js/main.1ac0617f.js"
+  ]
+}
